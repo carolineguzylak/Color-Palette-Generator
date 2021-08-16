@@ -1,0 +1,14 @@
+{
+  "name": "colorpalettegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile_sass": "node-sass sass/styling.scss css/styling.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
