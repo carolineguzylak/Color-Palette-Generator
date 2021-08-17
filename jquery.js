@@ -8,16 +8,25 @@ function randomColor(){
     return color;
 };
 
-// $("#singleColorBox").draggable();
+$("#singleColorBox").draggable({
+    revert:true
+});
 
-// $("#palette").droppable({
-//     drop: function(event, ui){
-//       $(this).css("background-color","#21dd85");
-//       $(this).find("p").remove();
-//       $("<li></li>").text(ui.draggable.text()).appendTo(this);
-//     },
-//     accept: ".color"
-//   }
+$("#palette").droppable({
+    drop: function(event, ui){
+        var c =  $(ui.draggable).css("background-color");
+        console.log(c);
+        // $(this).css("background-color","#21dd85");
+        $(this).css("background-color","pink");
+        // $("<div></div>").css("background-color", c).appendTo(this);
+        // var newDiv = document.createElement('div');
+        newDiv = document.createElement('div');
+        $(newDiv).html("color");
+        $(newDiv).css("background-color", c);
+        $(this).append(newDiv)
+        // $(newDiv).css("background-color", "green");
+    }
+});
 
 $("#singleColorButton").click(function(){
     $("#singleColorBox").css("background-color", randomColor());
