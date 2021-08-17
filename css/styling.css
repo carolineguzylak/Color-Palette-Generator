@@ -1,6 +1,34 @@
-#container {
-  margin: 70px; }
-  #container #singleColorBox {
-    background-color: #c7c7c7;
-    height: 200px;
-    width: 200px; }
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  background: #d4d4d4; }
+
+#palette {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 200px;
+  width: 300px;
+  background-color: white; }
+
+#singleColorContainer {
+  margin: 50px; }
+  #singleColorContainer #singleColorBox {
+    color: white;
+    background-color: grey;
+    height: 170px;
+    width: 170px; }
+
+#largePaletteContainer {
+  margin: 50px; }
+  #largePaletteContainer #largePaletteBox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid grey; }
+  #largePaletteContainer .LPcolor {
+    color: white;
+    background-color: grey;
+    flex: 1;
+    min-height: 140px; }
