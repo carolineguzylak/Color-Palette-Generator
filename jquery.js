@@ -16,15 +16,22 @@ $(".LPcolor").draggable({
     revert:true
 });
 
+
+
 $("#palette").droppable({
     drop: function(event, ui){
         var c =  $(ui.draggable).css("background-color");
         newDiv = document.createElement('div');
-        $(newDiv).html("color");
+        $(newDiv).html(" ");
         $(newDiv).css("background-color", c);
+        $(newDiv).addClass("droppedColor");
         $(this).append(newDiv)
+
+        // $(ui.draggable).addClass("droppedColor");
     }
 });
+
+
 
 $("#singleColorButton").click(function(){
     $("#singleColorBox").css("background-color", randomColor());
@@ -41,3 +48,6 @@ $("#largePaletteButton").click(function(){
     $("#LPcolor8").css("background-color", randomColor());
 });
 
+$("#resetPalette").click(function(){
+   $(".droppedColor").remove(); 
+});

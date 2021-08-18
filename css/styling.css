@@ -12,7 +12,7 @@ html {
   padding-right: 215px;
   padding-top: 10px; }
 
-#palette {
+#paletteBox #palette {
   position: fixed;
   right: 0;
   top: 0;
@@ -21,20 +21,26 @@ html {
   height: 200px;
   width: 400px;
   background-color: white;
+  border: 3px solid #bbbbbb;
+  border-radius: 10px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-start; }
-  #palette div {
+  #paletteBox #palette div {
     height: 50px;
     width: 50px; }
+
+#paletteBox #resetPalette {
+  height: 30px; }
 
 #singleColorContainer {
   margin: 50px; }
   #singleColorContainer #singleColorBox {
     color: white;
     background-color: grey;
+    border: 3px solid white;
     height: 170px;
     width: 170px; }
 
@@ -43,7 +49,7 @@ html {
   #largePaletteContainer #largePaletteBox {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid grey; }
+    border: 3px solid white; }
   #largePaletteContainer .LPcolor {
     color: white;
     background-color: grey;
