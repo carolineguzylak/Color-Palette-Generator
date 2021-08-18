@@ -1,57 +1,64 @@
 * {
   box-sizing: border-box; }
 
+:root {
+  --fontfam: Trebuchet MS; }
+
 html {
   height: 100%;
   background: #d4d4d4; }
 
-#paletteHeader {
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding-right: 215px;
-  padding-top: 10px; }
-
-#paletteBox #palette {
-  position: fixed;
-  right: 0;
-  top: 0;
-  margin-top: 30px;
-  margin-right: 30px;
-  height: 200px;
-  width: 400px;
-  background-color: white;
-  border: 3px solid #bbbbbb;
-  border-radius: 10px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: flex-start; }
-  #paletteBox #palette div {
-    height: 50px;
-    width: 50px; }
-
-#paletteBox #resetPalette {
-  height: 30px; }
-
-#singleColorContainer {
-  margin: 50px; }
-  #singleColorContainer #singleColorBox {
-    color: white;
-    background-color: grey;
-    border: 3px solid white;
-    height: 170px;
-    width: 170px; }
-
-#largePaletteContainer {
-  margin: 50px; }
-  #largePaletteContainer #largePaletteBox {
+#mainContainer {
+  padding: 50px; }
+  #mainContainer #welcome {
+    font-family: var(--fontfam);
+    font-size: 26px;
+    color: #eff0f1;
+    text-shadow: 4px 4px 5px #000000; }
+  #mainContainer #paletteHeader {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-right: 325px;
+    padding-top: 280px;
+    font-family: var(--fontfam); }
+  #mainContainer #paletteBox #palette {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 70px;
+    margin-right: 50px;
+    height: 200px;
+    width: 406px;
+    background-color: white;
+    border: 3px solid #bbbbbb;
+    border-radius: 10px;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    border: 3px solid white; }
-  #largePaletteContainer .LPcolor {
-    color: white;
-    background-color: grey;
-    flex: 1;
-    min-height: 140px; }
+    flex-direction: row;
+    align-content: flex-start; }
+    #mainContainer #paletteBox #palette div {
+      height: 50px;
+      width: 50px; }
+  #mainContainer #paletteBox #resetPalette {
+    height: 30px; }
+  #mainContainer #singleColorContainer {
+    margin-top: 50px; }
+    #mainContainer #singleColorContainer #singleColorBox {
+      color: white;
+      background-color: grey;
+      border: 3px solid white;
+      height: 170px;
+      width: 170px; }
+  #mainContainer #largePaletteContainer {
+    margin-top: 50px; }
+    #mainContainer #largePaletteContainer #largePaletteBox {
+      display: flex;
+      flex-wrap: wrap;
+      border: 3px solid white; }
+    #mainContainer #largePaletteContainer .LPcolor {
+      color: white;
+      background-color: grey;
+      flex: 1;
+      min-height: 140px; }

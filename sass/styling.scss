@@ -3,84 +3,102 @@
     box-sizing: border-box;
 }
 
+:root{
+    --fontfam: Trebuchet MS;
+}
+
 html{
     height: 100%;
     background: rgb(212, 212, 212);
 }
 
-#paletteHeader{
-    position:fixed;
-    right:0;
-    top:0;
-    padding-right:215px;
-    padding-top:10px;
-}
+#mainContainer{
+    padding:50px;
 
-#paletteBox{
-
-    #palette{
+    #welcome{
+        font-family: var(--fontfam);
+        font-size: 26px;
+        color:rgb(239, 240, 241);
+        text-shadow: 4px 4px 5px #000000;
+    }
+    
+    #paletteHeader{
         position:fixed;
         right:0;
         top:0;
-        margin-top: 30px;
-        margin-right: 30px;
-        height:200px;
-        width:400px;
-        background-color:white;
+        padding-right:325px;
+        padding-top:280px;
+
+        font-family: var(--fontfam);
+    }
     
-        border: 3px solid rgb(187, 187, 187);
-        border-radius: 10px;
+    #paletteBox{
     
-        display:flex;
-        justify-content:flex-start;
-        flex-wrap:wrap;
-        flex-direction:row;
-        align-content:flex-start;
-    
-        div{
-            height:50px;
-            width:50px;
+        #palette{
+            position:fixed;
+            right:0;
+            top:0;
+            margin-top: 70px;
+            margin-right: 50px;
+            height:200px;
+            width:406px;
+            background-color:white;
+        
+            border: 3px solid rgb(187, 187, 187);
+            border-radius: 10px;
+        
+            display:flex;
+            justify-content:flex-start;
+            flex-wrap:wrap;
+            flex-direction:row;
+            align-content:flex-start;
+        
+            // these are the dropped colors
+            div{
+                height:50px;
+                width:50px;
+            }
+        }
+        #resetPalette{
+            height: 30px;
         }
     }
-    #resetPalette{
-        height: 30px;
+    
+    
+    
+    
+    #singleColorContainer{
+    
+        margin-top:50px;
+    
+        #singleColorBox{
+            color:white;
+            background-color:grey;
+            border: 3px solid rgb(255, 255, 255);
+            height:170px;
+            width:170px;
+        }
     }
+    
+    #largePaletteContainer{
+    
+        margin-top:50px;
+    
+        #largePaletteBox{
+            display:flex;
+            flex-wrap:wrap;
+            border: 3px solid rgb(255, 255, 255);
+        }
+    
+        .LPcolor{
+            color:white;
+            background-color:grey;
+            flex:1;
+            min-height:140px;
+            // min-width:90px;
+        }
+    }
+    
 }
 
-
-
-
-#singleColorContainer{
-
-    margin:50px;
-
-    #singleColorBox{
-        color:white;
-        background-color:grey;
-        border: 3px solid rgb(255, 255, 255);
-        height:170px;
-        width:170px;
-    }
-}
-
-#largePaletteContainer{
-
-    margin:50px;
-
-    #largePaletteBox{
-        display:flex;
-        flex-wrap:wrap;
-        border: 3px solid rgb(255, 255, 255);
-
-        
-    }
-
-    .LPcolor{
-        color:white;
-        background-color:grey;
-        flex:1;
-        min-height:140px;
-        // min-width:90px;
-    }
-}
 

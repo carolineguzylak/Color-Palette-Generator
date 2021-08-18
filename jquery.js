@@ -17,7 +17,6 @@ $(".LPcolor").draggable({
 });
 
 
-
 $("#palette").droppable({
     drop: function(event, ui){
         var c =  $(ui.draggable).css("background-color");
@@ -27,10 +26,13 @@ $("#palette").droppable({
         $(newDiv).addClass("droppedColor");
         $(this).append(newDiv)
 
-        // $(ui.draggable).addClass("droppedColor");
+        $(newDiv).addClass("droppedColor");
     }
 });
 
+$(document).on('click','.droppedColor',function() {
+    $(this).closest("div").remove();
+});
 
 
 $("#singleColorButton").click(function(){
