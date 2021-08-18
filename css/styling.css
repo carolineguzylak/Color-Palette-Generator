@@ -19,8 +19,8 @@ html {
     position: fixed;
     right: 0;
     top: 0;
-    padding-right: 325px;
-    padding-top: 280px;
+    padding-right: 238px;
+    padding-top: 383px;
     font-family: var(--fontfam); }
   #mainContainer #paletteBox #palette {
     position: fixed;
@@ -28,8 +28,8 @@ html {
     top: 0;
     margin-top: 70px;
     margin-right: 50px;
-    height: 200px;
-    width: 406px;
+    height: 300px;
+    width: 500px;
     background-color: white;
     border: 3px solid #bbbbbb;
     border-radius: 10px;
@@ -42,7 +42,24 @@ html {
       height: 50px;
       width: 50px; }
   #mainContainer #paletteBox #resetPalette {
-    height: 30px; }
+    margin-top: 10px;
+    box-shadow: 3px 4px 0px 0px #a3a3a3;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+    border: 1px solid #c7c7c7;
+    display: inline-block;
+    cursor: pointer;
+    color: #6b6b6b;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #d9d9d9; }
+  #mainContainer #paletteBox #resetPalette:hover {
+    background-color: #cecece; }
+  #mainContainer #paletteBox #resetPalette:active {
+    position: relative;
+    top: 1px; }
   #mainContainer #singleColorContainer {
     margin-top: 50px; }
     #mainContainer #singleColorContainer #singleColorBox {
@@ -51,6 +68,25 @@ html {
       border: 3px solid white;
       height: 170px;
       width: 170px; }
+    #mainContainer #singleColorContainer #singleColorButton {
+      box-shadow: 3px 4px 0px 0px #a3a3a3;
+      background-color: #e8e8e8;
+      border-radius: 15px;
+      border: 1px solid #c7c7c7;
+      display: inline-block;
+      cursor: pointer;
+      color: #6b6b6b;
+      font-family: Arial;
+      font-size: 13px;
+      padding: 7px 25px;
+      margin-bottom: 7px;
+      text-decoration: none;
+      text-shadow: 0px 2px 0px #d9d9d9; }
+    #mainContainer #singleColorContainer #singleColorButton:hover {
+      background-color: #cecece; }
+    #mainContainer #singleColorContainer #singleColorButton:active {
+      position: relative;
+      top: 1px; }
   #mainContainer #largePaletteContainer {
     margin-top: 50px; }
     #mainContainer #largePaletteContainer #largePaletteBox {
@@ -62,3 +98,22 @@ html {
       background-color: grey;
       flex: 1;
       min-height: 140px; }
+    #mainContainer #largePaletteContainer #largePaletteButton {
+      box-shadow: 3px 4px 0px 0px #a3a3a3;
+      background-color: #e8e8e8;
+      border-radius: 15px;
+      border: 1px solid #c7c7c7;
+      display: inline-block;
+      cursor: pointer;
+      color: #6b6b6b;
+      font-family: Arial;
+      font-size: 13px;
+      padding: 7px 25px;
+      margin-bottom: 7px;
+      text-decoration: none;
+      text-shadow: 0px 2px 0px #d9d9d9; }
+    #mainContainer #largePaletteContainer #largePaletteButton:hover {
+      background-color: #cecece; }
+    #mainContainer #largePaletteContainer #largePaletteButton:active {
+      position: relative;
+      top: 1px; }
